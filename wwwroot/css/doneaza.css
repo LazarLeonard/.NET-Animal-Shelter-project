@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Ubuntu&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu" , sans-serif;
+}
+
+
+
+.navbar 
+{
+    text-transform: uppercase;
+    background-color:transparent;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .1rem; 
+      
+} 
+
+.nav-link 
+{
+    color: black !important;
+    font-size: 15px !important;
+    padding: 0 0 10px 0 !important;
+    display: unset !important; 
+}
+
+.navbar-brand img 
+{
+    height: 7rem;
+} 
+
+.navbar-nav li                            /*------------Space between buttons------------*/
+{
+    padding-right: .9rem;
+} 
+.nav-link:hover                         /*------------Button highlight------------*/
+{
+    border-bottom: 2px solid black;
+} 
+
+.dropdown-item
+{
+    color: black !important;
+    background-color: transparent;
+} 
+
+.dropdown-menu:hover 
+{
+    background-color: transparent;
+}
+
+
+
+h3.heading 
+{
+    margin-top: 140px;
+    color: aqua;
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase solid;
+    margin-bottom: 1.9rem;
+
+} 
+
+
+.plata 
+{
+    background: white;
+    max-width: 360px;
+    margin: 120px auto;
+    height: auto;
+    padding: 35px;
+    padding-top: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.plata h2 
+{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+
+.form .label 
+{
+    display: block;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.form .input 
+{
+    padding: 13px 0 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+
+
+.card-grp
+{
+    display: flex;
+    justify-content: space-between ;
+
+}
+
+.card-items 
+{
+    width: 48%;
+}
+
+.space 
+{
+    margin-bottom: 20px;
+} 
+
+.icon-relative 
+{
+    position: relative;
+}
+.icon-relative .fas,
+.icon-relative .far 
+{
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.button
+{
+    margin-top: 40px;
+    background: #2196f3;
+    padding: 12px;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+

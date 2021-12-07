@@ -1,0 +1,49 @@
+﻿@model Heaven.Models.Doneaza
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Doneaza</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DoneazaId" />
+            <div class="form-group">
+                <label asp-for="Numele_detinatorului" class="control-label"></label>
+                <input asp-for="Numele_detinatorului" class="form-control" />
+                <span asp-validation-for="Numele_detinatorului" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numarul_cardului" class="control-label"></label>
+                <input asp-for="Numarul_cardului" class="form-control" />
+                <span asp-validation-for="Numarul_cardului" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data_de_expirare" class="control-label"></label>
+                <input asp-for="Data_de_expirare" class="form-control" />
+                <span asp-validation-for="Data_de_expirare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CVC" class="control-label"></label>
+                <input asp-for="CVC" class="form-control" />
+                <span asp-validation-for="CVC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,69 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<br />
+<br />
+<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="~/css/style.css" rel="stylesheet" />
+<style>
+    body {
+        background-image: url('/images/register.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+</style>
+
+
+<div class="row d-flex justify-content-center col-12">
+    <div class="col-4 ">
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h4>Inregistrare</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.FirstName"></label>
+                <input asp-for="Input.FirstName" class="form-control" />
+                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.LastName"></label>
+                <input asp-for="Input.LastName" class="form-control" />
+                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" placeholder="Email adress" required autofocus" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" placeholder="Password" required />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Password" required />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button onclick='foo();' type="submit" class="btn-lg btn-success btn-block">Inregistrare</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+</div>
+<script>
+    function foo() {
+        alert('Inregistrarea a avut loc cu succes');
+    }
+</script>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

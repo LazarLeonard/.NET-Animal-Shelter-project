@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Heaven.Models.Doneaza>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Numele_detinatorului)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numarul_cardului)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data_de_expirare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CVC)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numele_detinatorului)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numarul_cardului)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data_de_expirare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CVC)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DoneazaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DoneazaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DoneazaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

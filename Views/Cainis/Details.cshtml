@@ -1,0 +1,42 @@
+﻿@model Heaven.Models.Caini
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Caini</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nume_caine)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nume_caine)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Varsta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Varsta)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Culoare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Culoare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Marime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CainiId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

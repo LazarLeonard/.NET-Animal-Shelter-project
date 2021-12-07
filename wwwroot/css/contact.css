@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+
+.contact 
+{
+    background: url(Images/b.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.contact h1 
+{
+    text-align: center;
+    color: turquoise;
+    margin: 0;
+}
+
+
+.contact-form 
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text 
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px;
+    border: 0;
+    background-color: black;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus 
+{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+.textarea.contact-form-text 
+{
+    resize: none;
+    height: 120px;
+}
+
+
+.btn 
+{   
+    float: right;
+    border-width: medium;
+    border-radius: 0;
+    text-transform: capitalize;
+    padding: .5rem 1.1rem;
+    font-size: .9rem;
+}
+
+.navbar 
+{
+    text-transform: uppercase;
+    background-color:transparent;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .1rem; 
+      
+} 
+
+.nav-link 
+{
+    color: black !important;
+    font-size: 15px !important;
+    padding: 0 0 10px 0 !important;
+    display: unset !important; 
+}
+
+.navbar-brand img 
+{
+    height: 7rem;
+} 
+
+.navbar-nav li                            /*------------Space between buttons------------*/
+{
+    padding-right: .9rem;
+} 
+.nav-link:hover                         /*------------Button highlight------------*/
+{
+    border-bottom: 2px solid black;
+} 
+
+.dropdown-item
+{
+    color: black !important;
+    background-color: transparent;
+} 
+
+.dropdown-menu:hover 
+{
+    background-color: transparent;
+}

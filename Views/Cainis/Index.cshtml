@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Heaven.Models.Caini>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nume_caine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Varsta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Culoare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nume_caine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Varsta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Culoare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CainiId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CainiId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CainiId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewData["Title"] = "Doneaza";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<html>
+<head>
+    <title>Heaven</title>
+    <link rel="stylesheet" href="doneaza.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://use.fontawesome.com/856a45d7ab.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+
+
+  
+
+        <style>
+            body {
+                background-color: lightblue;
+                margin: 0 10px;
+            }
+
+
+            h3.heading {
+                margin-top: 80px;
+                color: aqua;
+                text-align: center;
+                font-size: 1.9rem;
+                text-transform: uppercase solid;
+                margin-bottom: 1.9rem;
+            }
+
+
+            .plata {
+                background: white;
+                max-width: 360px;
+                margin: 120px auto;
+                height: auto;
+                padding: 35px;
+                padding-top: 30px;
+                border-radius: 5px;
+                position: relative;
+            }
+
+
+                .plata h2 {
+                    text-align: center;
+                    letter-spacing: 2px;
+                    margin-bottom: 40px;
+                    color: black;
+                }
+
+
+            .form .label {
+                display: block;
+                color: black;
+                margin-bottom: 6px;
+            }
+
+            .form .input {
+                padding: 13px 0 13px 25px;
+                width: 100%;
+                text-align: center;
+                border: 2px solid #dddddd;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                word-wrap: 3px;
+                outline: none;
+                font-size: 16px;
+                color: black;
+            }
+
+
+            .card-grp {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .card-items {
+                width: 100%;
+            }
+
+            .space {
+                margin-bottom: 20px;
+            }
+
+            .icon-relative {
+                position: relative;
+            }
+
+                .icon-relative .fas,
+                .icon-relative .far {
+                    position: absolute;
+                    bottom: 12px;
+                    left: 15px;
+                    font-size: 20px;
+                    color: black;
+                }
+
+            .button {
+                margin-top: 40px;
+                background: #2196f3;
+                padding: 12px;
+                text-align: center;
+                color: #f8f8f8;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+
+</head>
+
+
+<body>
+    <!-----Doneaza----->
+
+    <div class="wrapper">
+        <div class="plata">
+
+            <h2>Doneaza</h2>
+            <div class="form">
+                <div class="card-item space icon-relative">
+                    <label class="label">Detinatorul cardului:</label>
+                    <input type="text" class="input" name="detinator_card" placeholder="Numele detinatorului">
+
+                </div>
+                <div class="card-item space icon-relative">
+                    <label class="label">Numarul cardului:</label>
+                    <input type="text" class="input" name="nr_card" placeholder="Numar card" data-mask="0000 0000 0000 0000">
+
+                </div>
+                <div class="card-grp space">
+                    <div class="card-items  icon-relative">
+                        <label class="label">Data de expirare:</label>
+                        <input type="text" class="input" name="data_expirare" placeholder="00 / 00" data-mask=" 00 / 00">
+
+                    </div>
+                    <div class="card-items  icon-relative">
+                        <label class="label">CVC:</label>
+                        <input type="text" class="input" name="cvc" placeholder="000" data-mask="000">
+
+                    </div>
+                </div>
+                <div class=button type="doneaza">
+                    Doneaza</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X1L21SMC2nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+</body>
+</html>

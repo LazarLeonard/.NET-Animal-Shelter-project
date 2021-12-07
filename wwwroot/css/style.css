@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*----Bara de sus----*/
+#bara-navigare {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-logo img {
+    height: 60px;
+    padding-left: 40px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+    .navbar-nav li a {
+        float: right;
+        text-align: right;
+    }
+
+#bara-navigare ul li a:hover {
+    color: steelblue !important;
+}
+
+#despreNoi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+    #despreNoi .btn {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+.about-content {
+    padding-top: 20px;
+}
+.navbar {
+    background-color: paleturquoise;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*------Slider-----*/
+#slider {
+    width: 600%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+    .carousel-caption h5 {
+        color: teal;
+        font-size: 42px;
+    }
+
+/*---------Underline----------*/
+
+
+.heading-underline 
+{
+    width: 3rem;
+    height: .2rem;
+    background-color:black;
+    margin: 0 auto 2rem;
+}
+
+
+
+
+
+
+

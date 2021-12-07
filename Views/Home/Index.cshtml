@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+    <title>Heaven</title>
+
+    <link href="~/css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!--link bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!--link jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script><!--link js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><!--link js-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+
+        body {
+            background-color: paleturquoise;
+        }
+
+
+        .carousel-item {
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+        footer {
+            margin: 50px 0;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 38%; /*---------------top%10 if minimalize browser------------------*/
+            text-transform: uppercase;
+        }
+
+            .carousel-caption h1 {
+                font-size: 2rem;
+                color: aqua;
+                font-weight: 700;
+                letter-spacing: .3rem;
+                width: 100%;
+                right: 0;
+                left: 0;
+                text-shadow: .1rem .1rem .8 black;
+                padding-bottom: 5rem;
+            }
+
+            .carousel-caption p {
+                padding-bottom: 5rem;
+                color: aqua;
+                font-size: 2rem;
+                text-shadow: .1rem .1rem .5 black;
+            }
+
+
+
+
+
+        h3.heading {
+            margin-top: 75px 0;
+            text-align: center;
+            font-size: 1.9rem;
+            text-transform: uppercase;
+            margin-bottom: 1.9rem;
+        }
+
+
+        /*---------Underline----------*/
+
+
+        .heading-underline {
+            width: 3rem;
+            height: .2rem;
+            background-color: black;
+            margin: 0 auto 2rem;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <!---Image Slider-->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+
+            <!---Slide 1----->
+            <div class="carousel-item active" style="background-image: url(images/dc.jpg);">
+                <div class="carousel-caption text-center">
+                    <h1>Exista loc in inima ta pentru noi?</h1>
+                    <p>Daruieste acum si ajuta-ne sa salvam vieti</p>
+                </div>
+            </div>
+
+            <!---Slide 2----->
+            <div class="carousel-item" style="background-image: url(images/adopt.png);">
+
+            </div>
+
+            <!---Slide 3----->
+            <div class="carousel-item " style="background-image: url(images/cat.png);">
+
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
